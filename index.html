@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pageflip</title>
+</head>
+
+<body>
+    <div class="busca p-1">
+        <form class="tac">
+            <input type="text">
+        </form>
+        <div class="resultados tac"></div>
+        <!-- <nav class="tac mt-2">
+            <button>1</button>
+            <span> | </span>
+            <button>2</button>
+            <span> | </span>
+            <button>3</button>
+            <span> | </span>
+            <button>4</button>
+            <span> | </span>
+            <button>5</button>
+            <span> | </span>
+            <button>6</button>
+        </nav> -->
+        <div class="nav-controle tac mt-1">
+            <button class="prev">[ &lt; ]</button>
+            <input id="navNumber" class="tac" type="number" min="1" max="6">
+            <button class="next">[ &gt; ]</button>
+        </div>
+    </div>
+
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div id="p1" class="page odd">
+                    <div class="page-content">
+                        <article>
+                            <h2>Página 1</h2>
+                            <div class="font-size-controle">
+                                <button class="font-size-mais">+</button>
+                                <button class="font-size-menos">-</button>
+                            </div>
+                            <div class="conteudo">
+                                <p>Lorem, ipsum dolor maçã sit amet consectetur adipisicing elit. Ipsa itaque dolor consequuntur natus facilis possimus excepturi, quia quasi modi. Esse ratione dicta voluptatibus cumque maiores, quibusdam eos odio tempore asperiores libero, dolores maxime ipsam reiciendis amet nulla, delectus laboriosam ea optio vero aliquam. Quae corrupti culpa iusto. Nihil dolorum architecto nesciunt facilis quam nemo ab culpa pariatur autem. Consequatur illum odit fugiat aspernatur illo in repellendus inventore debitis, molestiae eveniet officia esse ratione sunt? Doloremque, illo qui incidunt assumenda nemo sit. Alias voluptatibus assumenda tempore qui architecto minima nostrum veniam consequuntur necessitatibus mollitia, praesentium explicabo, obcaecati nam magni deserunt dolor!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellat incidunt ut beatae illum qui commodi illo quia magnam? Atque magnam labore earum id, tempore repellat quam recusandae nam dolorum esse eius perferendis animi fugiat adipisci natus. Sequi dolorum sint odio totam autem officia assumenda magni harum fugiat? Dolore, delectus!</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div id="p2" class="page even">
+                    <div class="page-content">
+                        <article>
+                            <h2>Página 2</h2>
+                            <div class="font-size-controle">
+                                <button class="font-size-mais">+</button>
+                                <button class="font-size-menos">-</button>
+                            </div>
+                            <div class="conteudo">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque dolor consequuntur natus facilis possimus excepturi, quia quasi modi. Esse ratione dicta voluptatibus cumque maiores, quibusdam eos odio tempore asperiores libero, dolores maxime ipsam reiciendis amet nulla, delectus laboriosam ea optio vero aliquam. Quae corrupti culpa iusto. Nihil dolorum architecto nesciunt facilis quam nemo ab culpa pariatur autem. Consequatur illum odit fugiat aspernatur illo in repellendus inventore debitis, molestiae eveniet officia esse ratione sunt? Doloremque, illo qui incidunt assumenda nemo sit. Alias voluptatibus assumenda tempore qui architecto minima nostrum veniam consequuntur necessitatibus mollitia, praesentium explicabo, obcaecati nam magni deserunt dolor!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellat incidunt ut beatae illum qui commodi illo quia magnam? Atque magnam labore earum id, tempore repellat quam recusandae nam dolorum esse eius perferendis animi fugiat adipisci natus. Sequi dolorum sint odio totam autem officia assumenda magni harum fugiat? Dolore, delectus!</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div id="p3" class="page odd">
+                    <div class="page-content">
+                        <article>
+                            <h2>Página 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi, enim tenetur incidunt in pariatur corporis qui cumque amet laboriosam maxime accusantium inventore nostrum neque nihil beatae! Excepturi expedita laudantium esse facere iste, pariatur modi minus amet, similique beatae, inventore aliquam id harum ut maxime ipsum unde. Ipsum assumenda nemo veritatis repellendus ipsa, maiores doloribus inventore saepe iusto perferendis eligendi molestiae eaque pariatur obcaecati, repellat sunt. Quaerat recusandae, molestias omnis molestiae dicta iure dignissimos ipsum laborum laudantium? Molestiae, assumenda nam. Consequuntur esse recusandae ab iste cumque sequi consequatur praesentium facilis quasi, laboriosam qui molestias fuga sint doloremque asperiores? Culpa quis tempora atque. Qui similique ullam vero molestias, dolorum aut eligendi architecto, accusantium nostrum, totam sed minus non labore laborum nobis?</p>
+                        </article>
+                    </div>
+                </div>
+                <div id="p4" class="page even">
+                    <div class="page-content">
+                        <article>
+                            <h2>Página 4</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto totam aliquam laudantium exercitationem, id expedita, atque optio quis, eius nobis in voluptatibus? Expedita possimus explicabo, animi quibusdam officiis soluta quas blanditiis optio nulla impedit vel accusantium dignissimos omnis consequuntur nemo. Corporis officiis nam, harum fugit quo nesciunt quisquam hic temporibus at natus nostrum cupiditate blanditiis excepturi aliquid ipsa deserunt eius odio iure iste obcaecati esse unde ea eum. Praesentium, dignissimos sunt neque repellat facilis dolorum corrupti fugit unde, commodi quod odio. Exercitationem, nihil. Suscipit enim optio placeat perferendis ducimus atque!</p>
+                        </article>
+                    </div>
+                </div>
+                <div id="p5" class="page odd">
+                    <div class="page-content">
+                        <article>
+                            <h2>Página 5</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, nam! Veritatis, temporibus placeat corporis recusandae repudiandae earum? Illum adipisci tempora provident consectetur, aut laborum soluta ea? Nemo, exercitationem. Reiciendis, molestias, at excepturi voluptatum aspernatur repudiandae aperiam nihil esse labore expedita cum, magni laboriosam! Tempora ut vel, quidem iste mollitia quo recusandae cum incidunt! Sequi, voluptatibus praesentium dolorum veritatis necessitatibus ad, aut dignissimos placeat distinctio nesciunt provident. Earum, non? Maxime illum odio autem fugit, unde alias cumque beatae voluptate iste aspernatur voluptatem at possimus laboriosam culpa dignissimos illo quibusdam iure sit libero tempore a? Voluptate aliquid dolor sapiente quaerat quod suscipit laboriosam molestiae quia labore, praesentium itaque enim ad aut doloribus.</p>
+                        </article>
+                    </div>
+                </div>
+                <div id="p6" class="page even">
+                    <div class="page-content">
+                        <article>
+                            <h2>Página 6</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed consequatur architecto, eaque deleniti blanditiis quibusdam laboriosam, deserunt ipsa asperiores quo aliquid, fugit repellat voluptates tempora incidunt numquam sit dicta eligendi vero. Voluptatum, ratione. Ratione ut nostrum itaque ab saepe totam sit possimus aliquid maiores et veniam error dolorum doloremque harum, repellat consectetur ipsum reiciendis rerum excepturi vel obcaecati culpa. Culpa possimus ea expedita. Laudantium voluptatum a vero, labore dolorem necessitatibus qui voluptates, temporibus doloribus iure vel, tenetur eaque. Unde odio laborum nulla dolores blanditiis.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/hash.js"></script>
+    <script src="js/jquery.mark.min.js"></script>
+    <script src="js/turn.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
